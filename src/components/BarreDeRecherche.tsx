@@ -23,9 +23,9 @@ export function BarreDeRecherche({
                             setNewTask('Apprendre ');
                         }
                     }}
-                    // onBlur={(e) => {
-                    //     setNewTask('');
-                    // }}
+                    onBlur={(e) => {
+                        setNewTask(e.target.value);
+                    }}
                     onKeyDown={(e) => {
                         if (e.key === 'Enter') {
                             handleAddTask();
